@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# <p align="center"> 한성대학교 학식 리뷰 서비스 </p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+    <img width="300" src="https://user-images.githubusercontent.com/58367854/179403121-b4a272b5-f8df-4fd0-aca4-7b6590699d84.png" />
+</p>
 
-## Available Scripts
+<br />
 
-In the project directory, you can run:
+#### <p align="center">한성대학교 학식당의 메뉴를 리뷰할 수 있는 웹서비스</p>
 
-### `npm start`
+<img width="1000" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png"/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 개요 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### ✨`제1회 슬개골 정기해커톤`✨ 의 산출물.
+슬개골이란? <br />
+대학 동기 4명이 모여 만든 코딩 소모임<br />
+(_~~슬픈 개발자의 골짜기~~_) <br />
+---
+### 개발 기간 📆
+2022/07/16 - 2022/07/17
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### ROLE 👩🏻‍💻
+| 이름  |      역할      |
+|-----|:------------:|
+| 존   | Web FrontEnd |
+| 초코  |     iOS      |
+| 다운썬 |   BackEnd    |
+| 꼬꼬  |   BackEnd    |
 
-### `npm run build`
+--- 
+### 기술 스택 🚀
+| 기술             |                          설명                          |
+|----------------|:----------------------------------------------------:|
+| `Web FrontEnd` | React, MUI, emotion, Axios, react-router, javascript |
+| `iOS`          |                     XCode, swift                     |
+| `BackEnd`      |                  Spring Boot, java                   | 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+--- 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 결과물 🖼
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img width="500" src="https://user-images.githubusercontent.com/58367854/179404127-fea56b03-785d-4a48-a877-c6202762711a.png" /> <br />
+<img width="500" src="https://user-images.githubusercontent.com/58367854/179404162-d1191ac7-6490-4dec-ab6a-2fbd9d24e304.png" /> <br />
 
-### `npm run eject`
+사이트에서 보여지는 데이터는 모두 예시 데이터입니다.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img width="1000" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png"/>
