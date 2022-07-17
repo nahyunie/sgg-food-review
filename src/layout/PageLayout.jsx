@@ -12,6 +12,8 @@ import BasicDrawer from "./BasicDrawer";
 import AppBar from "./BasicAppBar";
 import Main from "./BasicMain";
 import DrawerHeader from "./BasicDrawerHeader";
+import {useEffect} from "react";
+import APIList from "../util/APIList";
 
 const drawerWidth = 240;
 
@@ -48,6 +50,17 @@ const PageLayout = ({children, isDetailPage}) => {
     const handleToolBarButtonClick = () => {
         navigate('/list');
     }
+
+    // useEffect(() => {
+    //     try {
+    //         const res = APIList.getFoodList();
+    //         if (res) {
+    //             console.log(res.data);
+    //         }
+    //     } catch (error){
+    //         console.log(error);
+    //     }
+    // },[]);
 
     return (
         <ThemeProvider theme={myTheme}>
