@@ -5,13 +5,19 @@ import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import EditIcon from '@mui/icons-material/Edit';
+import {useNavigate} from "react-router-dom";
 
 const MenuDetail = () => {
     const [isClickThumbsUp, setClickThumbsUp] = useState(false);
+    const navigate = useNavigate();
 
     const handleThumbsUpClick = () => {
         setClickThumbsUp(!isClickThumbsUp);
     };
+
+    const handleCreateButtonClick = () => {
+        navigate('/create');
+    }
 
     return (
         <>
@@ -89,13 +95,13 @@ const MenuDetail = () => {
                                             맛있어요 !!
                                         </p>
                                         <Grid container alignItems="center">
-                                            <Grid item xs={4}>
+                                            <Grid item xs={10}>
                                                 <p style={{ textAlign: "left", color: "gray" }}>
                                                     2022-05-22
                                                 </p>
                                             </Grid>
-                                            <Grid item xs={6} />
-                                            <Grid item xs={2}>
+
+                                            <Grid item xs={2} sx={{px: '2.5em'}}>
                                                 <Button
                                                     color="primary"
                                                     variant={isClickThumbsUp ? "outlined" : "contained"}
@@ -114,9 +120,21 @@ const MenuDetail = () => {
 
                     </Grid>
                 </Grid>
-                <Box sx={{ height: 320, transform: 'translateZ(0px)', flexGrow: 1 }}>
-
-                </Box>
+                <Fab
+                    color="primary"
+                    aria-label="add"
+                    onClick={handleCreateButtonClick}
+                    sx={{
+                        margin: 0,
+                        top: 'auto',
+                        right: 20,
+                        bottom: 20,
+                        left: 'auto',
+                        position: 'fixed',
+                    }}
+                >
+                    <EditIcon/>
+                </Fab>
             </Container>
 
         </>

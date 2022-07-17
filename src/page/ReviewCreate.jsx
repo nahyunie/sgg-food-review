@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
 import {Button, Container, Grid, Rating, TextField} from "@mui/material";
 import Typography from "@mui/material/Typography";
+import {useNavigate} from "react-router-dom";
 
 const ReviewCreate = () => {
     const [ratingData, setRatingData] = useState(0);
+    const navigate = useNavigate();
 
     const handleChangeRatingValue = (value) => {
         setRatingData(value);
@@ -17,6 +19,10 @@ const ReviewCreate = () => {
             review: data.get('review'),
         });
     }
+
+     const handleCancelClick = () => {
+        navigate(-1);
+     }
 
     return (
         <Container sx={{ py: 4 }} maxWidth="md">
@@ -61,7 +67,14 @@ const ReviewCreate = () => {
                 />
                 <Grid item sx={{p:'1em'}}>
                     <Button type="submit" variant="contained" sx={{m:'0.5em'}}>생성</Button>
-                    <Button variant="contained" color="lightgrey" sx={{m:'0.5em'}}>취소</Button>
+                    <Button
+                        variant="contained"
+                        color="lightgrey"
+                        sx={{m:'0.5em'}}
+                        onClick={handleCancelClick}
+                    >
+                        취소
+                    </Button>
                 </Grid>
             </Grid>
 
