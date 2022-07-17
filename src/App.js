@@ -35,6 +35,23 @@ function App() {
                             </PageLayout>
                         }
                     />
+                    <Route
+                        path="/list/:id"
+                        element={
+                            <PageLayout>
+                                <MenuList/>
+                            </PageLayout>
+                        }
+                    />
+                    <Route
+                        path="/면-찌개-김밥"
+                        element={
+                            <PageLayout>
+                                <MenuList/>
+                            </PageLayout>
+                        }
+                    />
+
             </Routes>
         </BrowserRouter>
     </div>

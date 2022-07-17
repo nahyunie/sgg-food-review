@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Box from "@mui/material/Box";
-import {Button, Container, Fab, Grid, Paper, Rating, SpeedDial, SpeedDialIcon, Stack} from "@mui/material";
+import {Button, Container, Fab, Grid, Paper, Rating, Stack} from "@mui/material";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
