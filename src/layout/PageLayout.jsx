@@ -20,10 +20,11 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import MenuList from "../page/MenuList";
 import MenuDetail from "../page/MenuDetail";
-import {Fab} from "@mui/material";
+import {Button, Fab} from "@mui/material";
 import EditIcon from "@mui/icons-material/Edit";
 import ReviewCreate from "../page/ReviewCreate";
 import {grey} from "@mui/material/colors";
+import {useNavigate} from "react-router-dom";
 
 
 const drawerWidth = 240;
@@ -75,7 +76,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 }));
 
 
-const PageLayout = () => {
+const PageLayout = ({children, isDetailPage}) => {
     // const theme = useTheme();
     const myTheme = createTheme({
         palette: {
@@ -104,6 +105,12 @@ const PageLayout = () => {
         setOpen(false);
     };
 
+    const navigate = useNavigate();
+
+    const handleClickMenuList = () => {
+        navigate('/list');
+    };
+
     return (
         <ThemeProvider theme={myTheme}>
             <Box color="primary">
@@ -120,9 +127,9 @@ const PageLayout = () => {
                             >
                                 <MenuIcon />
                             </IconButton>
-                            <Typography variant="h6" noWrap component="div">
+                            <Button variant="text" sx={{color: '#fff', fontSize: '1.5em'}} noWrap >
                                 한성대 학식 리뷰
-                            </Typography>
+                            </Button>
                         </Toolbar>
                     </AppBar>
                     <Drawer
@@ -147,7 +154,7 @@ const PageLayout = () => {
                         <List>
                             {['덮밥류 & 비빔밥', '면 & 찌개 & 김밥'].map((text, index) => (
                                 <ListItem key={text} disablePadding>
-                                    <ListItemButton sx={{textAlign: 'center', padding: '0.5em'}}>
+                                    <ListItemButton sx={{textAlign: 'center', padding: '0.5em'}} onClick={handleClickMenuList}>
                                         <ListItemText primary={text} />
                                     </ListItemButton>
                                 </ListItem>
@@ -156,26 +163,10 @@ const PageLayout = () => {
                     </Drawer>
                     <Main open={open}>
                         <DrawerHeader />
-                        {/*<MenuList />*/}
-                        {/*<MenuDetail />*/}
-                        <ReviewCreate />
+                        {children}
                     </Main>
                 </Box>
             </Box>
-            <Fab
-                color="primary"
-                aria-label="add"
-                sx={{
-                    margin: 0,
-                    top: 'auto',
-                    right: 20,
-                    bottom: 20,
-                    left: 'auto',
-                    position: 'fixed',
-                }}
-            >
-                <EditIcon />
-            </Fab>
         </ThemeProvider>
 
     );

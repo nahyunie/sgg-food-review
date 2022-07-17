@@ -1,9 +1,16 @@
 import React from 'react';
 import {Button, Card, CardActions, CardContent, CardMedia, Container, Grid} from "@mui/material";
 import Typography from "@mui/material/Typography";
+import {useNavigate} from 'react-router-dom';
 
 const MenuList = () => {
     const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const navigate = useNavigate();
+
+    const handleMenuClick = () => {
+        navigate('/detail');
+    }
+
     return (
         <Container sx={{ py: 4 }} maxWidth="md">
             {/* End hero unit */}
@@ -11,6 +18,7 @@ const MenuList = () => {
                 {cards.map((card) => (
                     <Grid item key={card} xs={12} sm={6} md={4}>
                         <Card
+                            onClick={handleMenuClick}
                             sx={{ display: 'flex', flexDirection: 'column' }}
                         >
                             <CardMedia
